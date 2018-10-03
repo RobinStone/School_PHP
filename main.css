@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.borders {
+    border: 1px solid red;
+}
+
+.wrapper {
+    max-width: 1200px;
+    min-width: 780px;
+    margin: 0 auto;
+}
+
+.page {
+    background: linear-gradient(45deg, #84afc3, #ffffff);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px 20px;
+    border-bottom: 2px solid #353745;
+}
+
+h1 {
+    color: #3e3393;
+    text-align: right;
+    align-self: center;
+    margin-right: 40px;
+}
+
+.logo {
+    margin-left: auto;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.31);
+    align-self: center;
+}
+
+main {
+    padding: 20px 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Courier";
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    text-align: justify;
+/*    text-shadow: 1px 1px 1px #000000;*/
+}
+
+.important {
+    flex-basis: 31%;
+    margin-right: 20px;
+}
+
+.info-block {
+    display: flex;
+    margin-left: auto;
+    flex-basis: 66.67%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.31);
+}
+
+.text-wrapper {
+    display: flex;
+    padding-top: 10px;
+/*    flex-wrap: wrap;*/
+/*    width: 100%;*/
+    margin: 0 auto;
+    max-height: 40px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.info-block p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slider-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.slider-item {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+    }
+
+.slide-1 {
+    background: url('https://static.school-php.com/skins/img/new/main-head-bg2-img.png') no-repeat center;
+    background-position: 50% 20%;
+}
+
+.slide-2 {
+    background: url('http://komplife.com/images/stories/ukrcomp.jpg') no-repeat;
+    background-size: 70%;
+    background-position: 50% 20%;
+}
+
+.slide-3 {
+    background: url('http://nsn.fm/upload/iblock/e3c/e3cbec38104c942fabc0f41e6f1a69a6.png') no-repeat center;
+    background-position: 50% 20%;
+}
+
+.slide-4 {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Schema_of_the_layers_of_the_graphical_user_interface_RU.svg/1200px-Schema_of_the_layers_of_the_graphical_user_interface_RU.svg.png') no-repeat center;
+    background-size: 70%;
+    background-position: 50% 20%;
+}
+
+.mytarget {
+    max-width: 80%;
+    text-align: center
+}
+
+ol {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 40px;
+    z-index: 3;
+}
+
+ol li {
+    margin-bottom: 20px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+ol li:hover {
+    transform: scale(1.2);
+    border-radius: 35px;
+    background-color: #00b8c7;
+    list-style: none;
+}
+
+.lessons {
+    margin-top: 30px;
+    padding-top: 10px;
+    flex-basis: 100%;
+    padding-bottom: 20px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.lessons h2 {
+    text-align: center;
+}
+
+.lessons-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.lessons-list li {
+    list-style-type: none;
+    max-width: 16.6%;
+    transition: 0.2s;
+}
+
+.lessons-list li:hover {
+    box-shadow: 2px 5px 10px #000;
+}
+
+.img-wrapper {
+    padding: 10px;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+
+.active {
+    opacity: 0.8;
+}
+.promises {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.promises .text-wrapper {
+    flex-basis: 30%;
+    padding: 0;
+    margin: 0;
+}
+
+.list-text li {
+    padding: 10px;
+}
+
+.list-text li:hover {
+    transform: scale(1);
+    border-radius: 35px;
+    background-color: #00b8c7;
+    list-style: none;
+}
+
+.list-text {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-basis: 30%;
+}
+
+.necessary-programs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.necessary-programs h2 {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
