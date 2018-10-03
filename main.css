@@ -11,6 +11,7 @@ li {
     list-style: none;
 }
 
+/*
 .visually-hidden {
     position: absolute;
     clip: rect(1px 1px 1px 1px);
@@ -21,6 +22,7 @@ li {
     width: 1px;
     overflow: hidden;
 }
+*/
 
 .borders {
     border: 1px solid red;
@@ -168,7 +170,7 @@ ol li {
 ol li:hover {
     transform: scale(1.2);
     border-radius: 35px;
-    background-color: #57f2ff;
+    background-color: #ffffff;
     list-style: none;
 }
 
@@ -293,7 +295,7 @@ ol li:hover {
     width: 200%;
     height: 100%;
     transform: rotate(-45deg);
-    background-color: rgba(76, 234, 167, 0.48);
+    background-color: rgba(27, 227, 244, 0.48);
     transition: 1s;
 }
 
@@ -312,7 +314,7 @@ ol li:hover {
     bottom:0;
     width: 100%;
     height: 100%;
-    background-color: rgba(76, 234, 167, 0.48);
+    background-color: rgba(27, 227, 244, 0.48);
     transition: 1s;
 }
 
