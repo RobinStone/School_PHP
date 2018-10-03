@@ -7,16 +7,16 @@
     <link href="main.css" rel="stylesheet">
 </head>
 
-<body class="page wrapper">
+<body class="page">
 
-    <header>
+    <header class="wrapper">
         <h1>О курсе создания интернет-сайтов</h1>
         <div class="logo">
             <img src="https://school-php.com/skins/img/logo6.jpg" width="484" height="77" alt="logo">
         </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content wrapper">
         <section class="important">
         <h2 class="visually-hidden">важная информация</h2>
             <p>
@@ -109,17 +109,51 @@
            </ol>
         </section>
         
-        <section class="necessary-programs borders">
+        <section class="necessary-programs">
             <h2>Всё, Вам всё нравится и Вы хотите стать программистами, тогда Вам необходимо установить следующие программы:</h2>
-            <ul>
-                <li></li>
+            <ul class="cart-list">
+                <li class="cart-item">
+                    <img src="img/br-1.png" width="200" height="100" alt="chrome firefox">
+                    <p>
+                       FireFox или Chrome с плагином flash, чтобы можно было смотреть видео в реальном времени. Проверить любое видео с сайта justin.tv 
+                    </p>
+                </li>
+                <li class="cart-item">
+                    <img src="img/br-2.png" width="200" height="100" alt="chrome firefox">
+                    <p>
+                       IDE-редактор, лично я пользуюсь DreamWeaver, что и Вам советую, но так же подойдут Eclipse, notepad++, и другие. 
+                    </p>
+                </li>
+                <li class="cart-item">
+                    <img src="img/pic-3.png" width="200" height="100" alt="chrome firefox">
+                    <p>
+                       Photoshop 
+                    </p>
+                </li>
+                <li class="cart-item">
+                    <img src="img/br-3.png" width="200" height="100" alt="chrome firefox">
+                    <p>
+                        пакет Denwer <a href="#">http://www.denwer.ru/</a> , если возникнут трудности с пониманием, то на офф.сайте есть видео-урок (не мой). 
+                    </p>
+                </li>
             </ul>
         </section>
+                
     </main>
 
     <footer>
-
+        <div class="footer-wrapper wrapper">
+            <p>
+                Школа программирования © 2012-2018
+            </p>
+            <img src="https://static.school-php.com/skins/img/logo.png" width="197" height="92" alt="gallaxy">
+            <p>
+                И да начнётся школа!
+            </p>
+        </div>
     </footer>
+    
+    
     <script src="jquery-3.3.1.min.js"></script>
     <script src="scr.js"></script>
 </body>

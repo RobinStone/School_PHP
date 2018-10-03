@@ -110,7 +110,7 @@ main {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.5;
     z-index: 0;
 }
 
@@ -168,7 +168,7 @@ ol li {
 ol li:hover {
     transform: scale(1.2);
     border-radius: 35px;
-    background-color: #00b8c7;
+    background-color: #57f2ff;
     list-style: none;
 }
 
@@ -251,6 +251,9 @@ ol li:hover {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
 }
 
 .necessary-programs h2 {
@@ -258,15 +261,91 @@ ol li:hover {
     width: 100%;
 }
 
+.cart-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
+.cart-item {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+/*    border: 1px solid #000;*/
+    padding: 5px;
+    min-height: 300px;
+    flex-basis: 25%;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 30px 20px 40px;
+    opacity: 0.5;
+    transition: 0.4s;
+}
 
+.cart-item::before {
+    content: '';
+    position: absolute;
+    left: -80%;
+    top:-50%;
+    width: 200%;
+    height: 100%;
+    transform: rotate(-45deg);
+    background-color: rgba(76, 234, 167, 0.48);
+    transition: 1s;
+}
 
+.cart-item:hover::before {
+    top: -300%;
+}
 
+.cart-item:hover::after {
+    bottom: -200%;
+}
 
+.cart-item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 234, 167, 0.48);
+    transition: 1s;
+}
 
+.cart-item:hover {
+    opacity: 1;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.31);
+}
 
+.cart-item p {
+    text-align: center;
+    font-weight: 700;
+    margin-top: auto;
+}
 
+footer {
+    display: flex;
+    background-color: #fff;
+    display: flex;
+    padding: 20px auto;
+    font-size: 18px;
+    font-weight: 700;
+}
 
+.footer-wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-wrapper p {
+    margin: 40px;
+}
 
 
 
